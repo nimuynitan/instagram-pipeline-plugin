@@ -1,7 +1,7 @@
 # Guía de Estilo — Universidad Uk Instagram
 
 > Este archivo vive en `~/.claude/instagram-pipeline/style-guide.md`.
-> Ya está preconfigurado con los valores reales de marca. Completá solo la sección de carreras y CTAs antes de tu primer pipeline.
+> Ya está completamente preconfigurado con los valores reales de marca, carreras y CTAs. Listo para usar.
 
 ## Colores de marca
 
@@ -87,11 +87,15 @@ Overlay:
 
 ## Estilo fotográfico para GPT Image 2
 
-- Fotografía profesional, alta resolución, 4K
-- Iluminación dramática y cinematográfica — puntos de luz sobre fondos oscuros
+- Fotografía profesional con personas latinoamericanas como sujeto principal, 4K
+- Iluminación cálida y profesional (oficina, estudio, espacio corporativo) — la foto debe ser clara antes del overlay
 - Personas latinoamericanas o escenarios relevantes al tema/carrera
 - Espacio libre en la zona del texto (sin sujetos bloqueando el tercio inferior o izquierdo)
-- Paleta oscura con acentos cálidos (complementa el naranja #FF671B)
+- Paleta cálida con tonos ambar, dorado y neutros profesionales
+- Sujeto en tercio derecho o inferior, dejando espacio libre al lado izquierdo o superior para el texto
+- Fondo desenfocado (bokeh) detrás de las personas
+- NUNCA: objetos simbólicos solos (balanzas, libros, edificios vacíos) como sujeto principal
+- NUNCA: iluminación dramática extrema, siluetas, fondos totalmente negros
 - Nunca texto, palabras, letras ni números en la imagen generada
 
 ## Países activos y badge
@@ -109,19 +113,40 @@ Overlay:
 
 ## Carreras que se pueden mencionar
 
-> ⚠️ Completar con el catálogo real antes del primer pipeline
+**Área creativa y comunicación:**
+- Licenciatura en Comunicación
+- Licenciatura en Diseño Gráfico Digital
+- Licenciatura en Producción Cinematográfica con IA
+- Arquitectura
+- Licenciatura en Producción Musical con IA
+- Licenciatura en Creación de Contenido
 
-- [Carrera 1]
-- [Carrera 2]
-- [Carrera 3]
+**Área social y humanidades:**
+- Licenciatura en Coaching
+- Licenciatura en Criminología
+- Licenciatura en Derecho
+- Licenciatura en Pedagogía
+- Licenciatura en Psicología
+
+**Área de ingenierías y tecnología:**
+- Ingeniería en Sistemas
+- Ingeniería en Inteligencia Artificial
+- Ingeniería Industrial
+- Desarrollo de Videojuegos con IA
+
+**Área de negocios:**
+- Licenciatura en Administración de Empresas
+- Licenciatura en Contabilidad
+- Licenciatura en Economía
+- Licenciatura en Finanzas
+- Licenciatura en Marketing Digital
+- Licenciatura en Gestión Estratégica de los Negocios
 
 ## CTAs estándar
 
-> ⚠️ Completar antes del primer pipeline
-
-- CTA principal: [ej: "Conoce nuestras carreras — link en bio"]
-- CTA secundario: [ej: "Escríbenos por WhatsApp"]
-- URL de conversión: [URL]
+- CTA principal: Conoce nuestras carreras — link en bio
+- CTA secundario: Escríbenos por WhatsApp
+- URL de conversión: universidaduk.com
 
 ## Temas prohibidos
 

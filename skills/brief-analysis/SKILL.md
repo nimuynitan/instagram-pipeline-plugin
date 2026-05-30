@@ -1,6 +1,6 @@
 ---
 name: brief-analysis
-description: This skill should be used when the user needs to analyze an Instagram post brief — interpreting the topic, defining the narrative angle, the 5-slide story arc, the target audience mindset, and the key message for each slide. Trigger when analyzing briefs for social media content creation, or when part of the instagram-pipeline. Always reads the style guide from ~/.claude/instagram-pipeline/style-guide.md before analyzing.
+description: This skill should be used when the user needs to analyze an Instagram post brief — interpreting the topic, defining the narrative angle, the 5-slide story arc, the target audience mindset, and the key message for each slide. Trigger when analyzing briefs for social media content creation, or when part of the instagram-pipeline. Reads the style guide and, when a career is specified, the matching buyer persona to ground the message in real audience data.
 ---
 
 # Skill: brief-analysis
@@ -8,12 +8,28 @@ description: This skill should be used when the user needs to analyze an Instagr
 ## Objetivo
 Interpretar el brief editorial y definir la estrategia narrativa del carrusel antes de escribir cualquier copy. Un buen brief-analysis es lo que diferencia un carrusel genérico de uno que genera engagement real.
 
+## Carga de contexto (OBLIGATORIO antes de analizar)
+
+1. **Leer la guía de estilo** desde `~/.claude/instagram-pipeline/style-guide.md`
+
+2. **Si el brief incluye un parámetro `carrera`**, leer el buyer persona correspondiente desde `~/.claude/instagram-pipeline/buyer-personas.md`. Buscar la sección de esa carrera (los nombres están en MAYÚSCULAS como encabezados ##). Extraer y usar:
+   - **Edad promedio** del segmento Ingresantes → define la edad del sujeto en las fotos y el tono del mensaje
+   - **Género predominante** → influye en quién aparece en las imágenes
+   - **Países principales** → si el brief no especifica país, usar el país #1 del persona
+   - **Motivación principal para estudiar** → es el ángulo emocional más poderoso para el copy
+   - **Situación laboral** → contexto de vida del lector (trabaja, busca crecer, emprende)
+   - **Nivel educativo de los padres** → si es mayoría primera generación universitaria, eso es un ángulo de orgullo potente
+   - **Datos de satisfacción de graduados** → pruebas sociales reales para usar en el copy
+
+   Si la carrera no aparece exactamente en el archivo, buscar la más cercana (ej: "Marketing Digital" → "Mercadotecnia") o continuar sin persona si no hay match.
+
 ## Proceso
 
 ### 1. Interpretar el tema y el contexto
 - ¿Qué quiere sentir o aprender el lector después de ver este carrusel?
 - ¿Es una efeméride (la fecha importa), una carrera (el beneficio importa) o un tip (la utilidad importa)?
 - ¿Qué emoción predomina: curiosidad, orgullo, urgencia, inspiración?
+- Si hay buyer persona: ¿qué motivación real de ese perfil podemos activar?
 
 ### 2. Definir el ángulo narrativo
 No todos los temas se cuentan igual. Elegir uno:
@@ -23,8 +39,9 @@ No todos los temas se cuentan igual. Elegir uno:
 - **Antes/después** → contraste entre el estado actual y el posible
 - **Lista de valor** → "X cosas que no sabías sobre Y"
 
+Si hay buyer persona, anclar el ángulo en su motivación principal. Ejemplo: si la motivación #1 de la carrera es "ser ejemplo para un familiar", un ángulo de orgullo familiar va a resonar más que uno de empleabilidad pura.
+
 ### 3. Diseñar el arco de 5 slides
-Cada slide tiene un rol específico en el carrusel:
 
 | Slide | Rol | Objetivo |
 |---|---|---|
@@ -34,20 +51,20 @@ Cada slide tiene un rol específico en el carrusel:
 | 4 | Desarrollo / valor 2 | Segundo punto de valor o profundización |
 | 5 | Cierre / CTA | Síntesis + acción clara |
 
-Para efemérides: el slide 1 menciona la fecha, slides 2-4 desarrollan el tema con datos, slide 5 conecta con la propuesta de la universidad.
-
-Para carreras: el slide 1 plantea el diferencial, slides 2-4 exploran salidas laborales o especialidades, slide 5 es el CTA de inscripción.
-
-Para tips: el slide 1 es el hook con la promesa, slides 2-4 son los tips en sí, slide 5 es la síntesis + CTA.
+Para efemérides: slide 1 menciona la fecha, slides 2-4 desarrollan con datos, slide 5 conecta con la propuesta de la universidad.
+Para carreras: slide 1 plantea el diferencial, slides 2-4 exploran salidas laborales o especialidades, slide 5 es el CTA de inscripción.
+Para tips: slide 1 es el hook con la promesa, slides 2-4 son los tips, slide 5 es síntesis + CTA.
 
 ### 4. Definir el mensaje clave de cada slide
-Una oración por slide que resume qué tiene que quedarse grabado en el lector. Esta oración guía el copy-generation.
+Una oración por slide que resume qué tiene que quedarse grabado en el lector.
 
-### 5. Considerar el contexto local
-Si se especificó un país:
-- ¿Hay datos locales relevantes para el tema?
-- ¿El contexto económico o laboral del país cambia el ángulo?
-- ¿Qué referencias locales resuenan mejor con la audiencia?
+### 5. Perfil del sujeto para las imágenes
+Basándote en el buyer persona (si está disponible), definir:
+- Edad aproximada de la persona que aparece en las fotos
+- Género predominante
+- Contexto de vida (trabaja en oficina, estudia desde casa, emprende, etc.)
+
+Esto se pasa al visual-brief para que las imágenes muestren personas alineadas al perfil real de la carrera.
 
 ## Output esperado
 
@@ -57,17 +74,25 @@ Guardar en `posts/{slug}/brief.md`:
 # Brief: {tema} — {país}
 
 ## Parámetros
-- Tema: 
+- Tema:
 - Formato: carrusel 5 slides
 - Carrera: [si aplica]
-- País: 
-- Contexto adicional: 
+- País:
+- Contexto adicional:
+
+## Buyer persona aplicado
+[Si hay carrera: resumen del perfil — edad, género, motivación principal, contexto laboral, país principal. Si no hay carrera: "No aplica"]
 
 ## Ángulo narrativo
-[Tipo elegido + justificación en 2 oraciones]
+[Tipo elegido + justificación en 2 oraciones, anclado en la motivación del persona si aplica]
 
 ## Emoción predominante
 [curiosidad / orgullo / urgencia / inspiración / otro]
+
+## Perfil del sujeto para imágenes
+- Edad aproximada: [del buyer persona]
+- Género: [predominante del persona]
+- Contexto: [oficina / casa / exterior / café, según el perfil]
 
 ## Arco narrativo
 
@@ -90,7 +115,4 @@ Mensaje clave: [1 oración]
 ### Slide 5 — Cierre
 Rol: síntesis + CTA
 Mensaje clave: [1 oración]
-
-## Referencia de estilo aplicada
-[Qué elementos del style-guide son más relevantes para este posteo]
 ```

@@ -10,7 +10,7 @@
 | Naranja Uk (principal) | #FF671B | Titular bold, logo, badge |
 | Blanco | #FFFFFF | Subtítulo bold, texto de apoyo, "Universidad" en logo |
 | Negro | #000000 | Fondo base, overlay |
-| Overlay sobre foto | rgba(0, 0, 0, 0.55) | Capa oscurecedora sobre imagen de fondo |
+| Overlay sobre foto | rgba(0, 0, 0, 0.50) | Capa oscurecedora sobre imagen de fondo |
 
 ## Tipografía
 
@@ -81,21 +81,26 @@ Badge de país:
 
 Overlay:
   Color: #000000
-  Opacidad: 55%
+  Opacidad: 50%
   Modo: Normal
 ```
 
 ## Estilo fotográfico para GPT Image 2
 
-- Fotografía profesional con personas latinoamericanas como sujeto principal, 4K
-- Iluminación cálida y profesional (oficina, estudio, espacio corporativo) — la foto debe ser clara antes del overlay
-- Personas latinoamericanas o escenarios relevantes al tema/carrera
-- Espacio libre en la zona del texto (sin sujetos bloqueando el tercio inferior o izquierdo)
-- Paleta cálida con tonos ambar, dorado y neutros profesionales
+Estilo: **lifestyle real y luminoso** — fotografía auténtica de personas jóvenes latinas en contextos cotidianos. NO estética corporativa oscura ni cinematográfica.
+
+- Personas latinas jóvenes (20-40 años, ajustar según buyer persona de la carrera) como sujeto principal
+- Contextos cotidianos auténticos: café, oficina moderna luminosa, home office, campus, exteriores urbanos
+- Personas espontáneas y reales: sonriendo, concentradas, usando laptop o celular
+- Luz natural cálida y BRILLANTE — luz de ventana, exteriores de día, ambientes bien iluminados
+- La foto debe ser clara, brillante y alegre antes del overlay
+- Paleta: tonos cálidos y naturales, plantas, madera, luz dorada suave, ambientes acogedores
 - Sujeto en tercio derecho o inferior, dejando espacio libre al lado izquierdo o superior para el texto
 - Fondo desenfocado (bokeh) detrás de las personas
+- Se permite humor / situaciones identificables cuando el tema lo pide
+- Referencia mental: fotografía lifestyle de redes sociales / publicidad tech, no foto de estudio corporativa
 - NUNCA: objetos simbólicos solos (balanzas, libros, edificios vacíos) como sujeto principal
-- NUNCA: iluminación dramática extrema, siluetas, fondos totalmente negros
+- NUNCA: dark, cinematic, dramatic lighting, moody, shadows, siluetas, fondos negros, mood sombrío
 - Nunca texto, palabras, letras ni números en la imagen generada
 
 ## Países activos y badge

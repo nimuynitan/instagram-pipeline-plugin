@@ -28,32 +28,48 @@ Valores confirmados de marca:
 
 ## Reglas de composición fotográfica (CRÍTICO)
 
-Estas reglas son obligatorias en todos los prompts. El estilo de referencia del perfil @uk.universidad usa siempre:
+Estas reglas son obligatorias en todos los prompts. El estilo de referencia del perfil @uk.universidad es **lifestyle real y luminoso** — fotografía auténtica de personas jóvenes latinas en contextos cotidianos, NO estética corporativa oscura ni cinematográfica.
 
-### 1. Personas latinoamericanas siempre
-- El sujeto principal es SIEMPRE una persona o grupo de personas latinoamericanas en contexto profesional o educativo
-- NUNCA usar objetos simbólicos solos como sujeto principal (no balanzas de justicia solas, no libros solos, no edificios vacíos, no elementos abstractos)
-- Las personas deben verse reales, contemporáneas, en situaciones cotidianas del mundo laboral o académico
+### 1. Personas latinas jóvenes siempre, en contexto cotidiano auténtico
+- El sujeto principal es SIEMPRE una persona latina real, generalmente joven (20-40 años, ajustar según buyer persona de la carrera)
+- Contextos cotidianos y auténticos: café, oficina moderna, casa/home office, campus universitario, exteriores urbanos, escritorio de estudio
+- Las personas se ven espontáneas, relajadas, reales — sonriendo, concentradas, usando laptop o celular
+- NUNCA usar objetos simbólicos solos como sujeto principal (no balanzas, no libros solos, no edificios vacíos, no elementos abstractos)
+- Se permite el humor / situaciones identificables cuando el tema lo pide (ej: persona estresada entre papeles para un tema de organización)
 
-### 2. Iluminación cálida y profesional — NO cinematográfica oscura
-- Iluminación cálida, controlada, de estudio o de oficina moderna
-- La foto debe ser clara y legible ANTES de aplicar el overlay
-- El overlay oscuro lo aplica el diseñador encima — la foto no debe ser oscura por sí sola
-- Paleta de tonos cálidos (ambar, dorado, tostado) o neutros profesionales
-- Evitar: iluminación dramática extrema, backlit, siluetas, fondos totalmente negros
+### 2. Luz natural cálida y brillante — NO cinematográfica oscura
+- Iluminación natural, cálida y LUMINOSA — luz de ventana, exteriores de día, ambientes bien iluminados
+- La foto debe ser clara, brillante y alegre. NO oscura, NO dramática
+- Evitar terminantemente: iluminación dramática extrema, backlit oscuro, siluetas, fondos negros, mood sombrío
+- Paleta: tonos cálidos y naturales, ambientes acogedores, verde de plantas, madera, luz dorada suave
+- Referencia mental: fotografía lifestyle de redes sociales / publicidad de producto tech, no foto de estudio corporativa
 
 ### 3. Composición con espacio para texto
 - Sujeto posicionado en el tercio derecho o inferior de la imagen
-- El tercio izquierdo o superior izquierdo queda relativamente despejado para el texto
-- Si hay varias personas, agruparlas a un lado dejando espacio al otro
-- Fondo desenfocado (bokeh) detrás de las personas para que el texto superpuesto sea legible
+- El tercio izquierdo o superior queda despejado para el texto superpuesto
+- Fondo desenfocado (bokeh) detrás de la persona para que el texto sea legible
+- Formato vertical preferido para historias; cuadrado para feed
 
-### 4. Escenarios según tipo de contenido
-- **Carreras profesionales** (derecho, psicología, administración): oficina moderna, sala de reuniones, despacho profesional, espacio corporativo
-- **Carreras creativas** (arte, comunicación, arquitectura): estudio creativo, espacio de diseño, entorno con elementos de la carrera
-- **Efemérides** (días internacionales, fechas especiales): persona celebrando o trabajando en el contexto del tema
-- **Tips/educación online**: persona estudiando con laptop en casa u oficina, ambiente cómodo y bien iluminado
-- **Institucional**: grupo de personas diversas en contexto universitario o profesional
+### 4. Perfil del sujeto según buyer persona
+Leer el perfil del sujeto definido en el `brief.md` (que viene del buyer persona de la carrera) y reflejarlo:
+- **Edad**: usar la edad promedio del segmento Ingresantes de esa carrera (ej: Derecho ~38 años, Arquitectura ~33 años)
+- **Género**: reflejar el predominante del persona (ej: si la carrera es 75% masculino, el sujeto principal es hombre)
+- **Contexto de vida**: alinear el escenario con la situación laboral del persona (trabaja en oficina, estudia desde casa, emprende)
+
+### 5. Escenarios según tipo de contenido
+- **Carreras profesionales** (derecho, contabilidad, administración): persona joven-adulta trabajando en oficina luminosa, café con laptop, o home office ordenado
+- **Carreras creativas** (diseño, comunicación, arquitectura, cine): persona en estudio creativo luminoso, espacio de trabajo con elementos de la carrera, exterior urbano
+- **Efemérides**: persona del perfil celebrando o en su contexto cotidiano relacionado al tema
+- **Tips / educación online**: persona estudiando con laptop en casa, café o campus, ambiente cómodo y bien iluminado, sonriente
+- **Institucional**: persona joven latina diversa en contexto universitario o profesional luminoso
+
+### 6. Referencias de estilo concretas (basadas en el material de marca)
+Los prompts deben buscar imágenes con este feel:
+- Mujer latina joven sonriendo con celular en un café luminoso, luz de ventana
+- Hombre joven en oficina moderna y clara, expresión relajada y amable
+- Persona estudiando con laptop en home office acogedor con plantas y luz natural
+- Joven con laptop en exterior de campus, cielo azul, día soleado
+- Persona usando celular sentada en escalinata urbana, luz de día
 
 ## Proceso
 
@@ -64,15 +80,16 @@ Estas reglas son obligatorias en todos los prompts. El estilo de referencia del 
 [Descripción de la persona: edad aproximada, género, vestimenta profesional, expresión], [acción que realiza], [escenario específico y concreto], warm professional lighting, [composición: sujeto en right/left third, opposite side clear for text overlay], shallow depth of field, bokeh background, no text, no words, no letters, photorealistic, 4K, professional photography
 ```
 
-**Ejemplos correctos por tipo:**
-- Derecho: "Latin American woman in her 30s wearing professional blazer, reviewing legal documents at a modern wooden desk, warm office lighting with city view in background, subject positioned on right third, left area clear for text overlay, shallow depth of field, no text, photorealistic, 4K"
-- Educación online: "Young Latin American man in his late 20s smiling while working on laptop at a bright modern home office, warm natural light from window, positioned on right side, left third clear, bokeh background, no text, photorealistic, 4K"
-- Efeméride profesional: "Latin American professional woman in her 40s standing confidently in a modern office hallway, warm ambient lighting, subject on right third leaving left side open for text, shallow depth of field, no text, photorealistic, 4K"
+**Ejemplos correctos por tipo (estilo lifestyle luminoso):**
+- Derecho (sujeto ~38, masculino): "Latin American man in his late 30s smiling confidently while working on laptop in a bright modern office, natural window light, plants in background, relaxed authentic expression, positioned on right third, left area clear for text overlay, shallow depth of field, bright airy lifestyle photography, no text, photorealistic, 4K"
+- Educación online (sujeto joven): "Young Latin American woman around 28 studying with laptop at a cozy home office desk, warm natural light from window, plants and books in soft-focus background, genuine smile, positioned on right side, left third clear, bright lifestyle photography, no text, photorealistic, 4K"
+- Tip de estudio: "Young Latin American man sitting on outdoor campus steps using smartphone, sunny day, blue sky, modern buildings bokeh background, casual relaxed mood, positioned on right, left side open for text, bright natural lifestyle photography, no text, photorealistic, 4K"
 
-**Ejemplos INCORRECTOS (no usar):**
-- ❌ "Scales of justice with digital circuit board background, dark cinematic lighting"
+**Ejemplos INCORRECTOS (NUNCA usar):**
+- ❌ "Scales of justice with digital circuit board, dark cinematic lighting"
 - ❌ "Ancient law books on mahogany desk, candlelight, dark atmospheric"
-- ❌ "Stone colonial courtyard at dawn, no people, dramatic shadows"
+- ❌ "Professional in dark dramatic office, moody lighting, deep shadows"
+- ❌ Cualquier prompt con: dark, cinematic, dramatic lighting, moody, shadows, night, silhouette
 
 ### 2. Brief Photoshop (por slide)
 

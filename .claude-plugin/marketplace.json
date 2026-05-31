@@ -8,7 +8,7 @@
       "name": "instagram-pipeline",
       "source": "./",
       "description": "Pipeline completo de contenido para Instagram con brief editorial, copy por slide, brief Photoshop e imágenes generadas por DALL-E 3.",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "category": "marketing",
       "keywords": ["instagram", "social-media", "dall-e", "content", "latam"]
     }

@@ -1,6 +1,6 @@
 {
   "name": "instagram-pipeline",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Pipeline de generación de contenido para Instagram de Universidad Uk. Toma un brief editorial y produce copy completo, brief Photoshop, imágenes de fondo generadas por DALL-E 3 y preview HTML listo para aprobar.",
   "author": {
     "name": "Universidad Uk — Marketing"
